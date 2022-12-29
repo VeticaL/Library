@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+.header {
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;;
+}
+
+.books {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+input {
+    width: 200px;
+}
+
+.addBtn {
+    width: 150px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: large;
+}
+
+.addBtn:hover {
+    background-color: gainsboro;
+}
+
+.submit {
+    width: 200px;
+}
+
+.btnActive {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-color: gray;
+    padding: 10px;
+}
+
+.bookContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.items {
+    background-color: gray;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.itemsBtn {
+    width: 200px;
+    margin: 2px;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
