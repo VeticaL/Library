@@ -1,42 +1,29 @@
-const btnActive = document.querySelector(".btnActive");
-const book = document.querySelector("#book");
-const Author = document.querySelector("#Author");
-const Pages = document.querySelector("#Pages");
-const checkbox = document.querySelector("#checkbox");
-const submit = document.querySelector(".submit");
+let mylibrary = [];
 
-btnActive.style.display = "none";
-
-function showform() {
-    if (btnActive.style.display !== "none") {
-        btnActive.style.display = "none";
-      } else {
-        btnActive.style.display = "flex";
-      }
+function Book(title, author, pages, read) {
+ this.title = title
+ this.author = author
+ this.pages = pages
+ this.read = read
 }
+
+function addBookRoLibrary(title, author, pages, read) {
+  let book = new Book(title, author, pages, read)
+  mylibrary.push(book)
+}
+
+
+const fname = document.querySelector("#book")
+const writer = document.querySelector("#Author")
+const page = document.querySelector("#Pages")
 
 function value() {
-    
-    let author = Author.value
-    let pages = Pages.value
-    let isread = checkbox.value
-    console.log(title, author, pages, isread)
-    console.log("da")
+    let Name = fname.value
+    let Writer = writer.value
+    console.log(Name, Writer)
 }
 
 
 
-
-
-// let mylibrary = [];
-
-// function book(title, author, pages, isread) {
-//  this.title = title
-//  this.author = author
-//  this.pages = pages
-//  this.isread = isread
-// }
-
-// function addBookRoLibrary() {
-
-// }
+let book = new Book("yp", "djaj" , "ajkdl", 1)
+console.log(book)
