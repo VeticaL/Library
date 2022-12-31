@@ -10,10 +10,10 @@
 <body>
     <div class="header"><h1>Library</h1></div>
     <div class="books">
-        <button class="addBtn" onclick="showform()">+ Add Books</button>
+        <button class="addBtn">+ Add Books</button>
     </div>
     <div class="btnActive">
-        <form class="bookForm">
+        <form id="form" >
             <label for="Book">Book Name</label> <br>
             <input type="text" id="Book" name="Book" required> <br>
             <label for="Author">Author Name</label><br>
@@ -22,17 +22,17 @@
             <input type="number" id="Pages" name="Pages" min="1" max="9999" required><br>
             <label for="read">read?</label>
             <input type="checkbox" id="read" name="read"><br>
-            <button type="submit" class="submit" onclick="value()">Submit</button><br>
+            <button type="submit" class="submit">Submit</button><br>
         </form>
     </div>
-    <div class="bookContainer">
-        <div class="items">
-            <p>ad</p>
-            <p>ad</p>
-            <p>ad</p>
+    <div id="bookContainer">
+        <div class="items" id="cards">
+            <p id="title">ad</p>
+            <p id="author">ad</p>
+            <p id="pages">ad</p>
             <div class="btnContainer">
-                <button class="itemsBtn">Read</button>
-                <button class="itemsBtn">Remove</button>
+                <button id="readBtn">Read</button>
+                <button id="removeBtn">Remove</button>
             </div>
         </div>
     </div>
